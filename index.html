@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nirbhay Rai | IT Site Support Executive | ATMS & Network Engineer</title>
+  <meta name="description" content="Nirbhay Rai – 5+ years in ATMS, CCTV, ANPR, Networking & Highway Infrastructure. Available for IT & Field Support roles across India."/>
+  <meta name="keywords" content="Nirbhay Rai, ATMS Engineer, CCTV Specialist, Highway IT Job UP, Toll Technician, ANPR Engineer, Network Engineer, Site Support Executive India"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="ld-box">
+    <svg viewBox="0 0 80 80" class="ld-svg">
+      <circle class="ld-track" cx="40" cy="40" r="34"/>
+      <circle class="ld-arc"   cx="40" cy="40" r="34"/>
+    </svg>
+    <span class="ld-initials">NR</span>
+  </div>
+  <p class="ld-label">Loading Portfolio<span class="ld-dots"></span></p>
+</div>
+
+<!-- CURSOR -->
+<div class="cur-outer" id="cur-outer"></div>
+<div class="cur-inner" id="cur-inner"></div>
+
+<!-- BG CANVAS -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#hero" class="n-logo">NR<span class="ndot">.</span></a>
+  <ul class="n-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">What I Do</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#vlog">Vlog</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="n-right">
+    <span class="n-avail"><span class="avail-dot"></span>Available</span>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
+    <button class="n-ham" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob-menu" id="mob-menu">
+  <ul>
+    <li><a href="#hero" class="ml">Home</a></li>
+    <li><a href="#about" class="ml">About</a></li>
+    <li><a href="#services" class="ml">What I Do</a></li>
+    <li><a href="#skills" class="ml">Skills</a></li>
+    <li><a href="#experience" class="ml">Experience</a></li>
+    <li><a href="#vlog" class="ml">Vlog</a></li>
+    <li><a href="#gallery" class="ml">Gallery</a></li>
+    <li><a href="#contact" class="ml">Contact</a></li>
+  </ul>
+</div>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section id="hero">
+  <div class="hero-inner">
+
+    <div class="hero-left">
+      <div class="h-badge"><span class="hb-dot"></span>Open to Opportunities</div>
+      <h1 class="h-name">Nirbhay<br><em>Rai<span class="ndot">.</span></em></h1>
+      <div class="h-role">
+        <span class="tp-prefix">/&gt;&nbsp;</span>
+        <span id="tp-text"></span><span class="tp-cur">|</span>
+      </div>
+      <p class="h-tagline">5+ years building &amp; maintaining critical IT infrastructure on India's highways — ATMS, CCTV, ANPR, Networking &amp; beyond.</p>
+      <div class="h-btns">
+        <a href="NirbhayRai_CV.pdf" target="_blank" class="btn-acc"><i class="fas fa-eye"></i> View CV</a>
+        <a href="#contact" class="btn-out"><i class="fas fa-paper-plane"></i> Hire Me</a>
+      </div>
+      <div class="h-socials">
+        <a href="mailto:nirbhayrai722@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://wa.me/916392324588" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+916392324588" title="Phone"><i class="fas fa-phone"></i></a>
+        <a href="https://www.linkedin.com/in/nirbhay-rai-2b813220a" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/nirbhay_raii" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <!-- FACEBOOK: Apna link daalo aur style="display:none" hatao -->
+        <a href="https://facebook.com/YOUR_USERNAME" target="_blank" title="Facebook" style="display:none" id="social-fb"><i class="fab fa-facebook-f"></i></a>
+        <!-- X/TWITTER: Apna link daalo aur style="display:none" hatao -->
+        <a href="https://x.com/YOUR_USERNAME" target="_blank" title="X (Twitter)" style="display:none" id="social-x"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- 3D PROFILE CARD -->
+    <div class="hero-right">
+      <div class="card-3d-wrap" id="card3d">
+        <div class="card-3d">
+          <div class="c3-glow"></div>
+          <div class="c3-img-wrap">
+            <img src="nirbhay.jpeg" alt="Nirbhay Rai" class="c3-img"/>
+            <div class="c3-ring r1"></div>
+            <div class="c3-ring r2"></div>
+          </div>
+          <div class="c3-chip ch-a"><i class="fas fa-traffic-light"></i> ATMS</div>
+          <div class="c3-chip ch-b"><i class="fas fa-video"></i> CCTV</div>
+          <div class="c3-chip ch-c"><i class="fas fa-network-wired"></i> Network</div>
+          <div class="c3-chip ch-d"><i class="fas fa-car"></i> ANPR</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- STATS -->
+  <div class="h-stats">
+    <div class="hs-item"><span class="hs-n" data-t="5">0</span><span class="hs-s">+</span><p>Years Exp</p></div>
+    <div class="hs-div"></div>
+    <div class="hs-item"><span class="hs-n" data-t="12">0</span><span class="hs-s">+</span><p>Skills</p></div>
+    <div class="hs-div"></div>
+    <div class="hs-item"><span class="hs-n" data-t="30">0</span><span class="hs-s">+</span><p>Projects</p></div>
+    <div class="hs-div"></div>
+    <div class="hs-item"><span class="hs-n" data-t="3">0</span><span class="hs-s">+</span><p>Companies</p></div>
+  </div>
+
+  <div class="scroll-hint"><span></span></div>
+</section>
+
+<!-- ═══════════ ABOUT ═══════════ -->
+<section id="about" class="sec alt-sec">
+  <div class="sec-inner">
+    
+    <div class="about-grid">
+      <div class="about-txt reveal">
+        <h2 class="sec-h">Who Am <span class="acc">I?</span></h2>
+        <p>I'm <strong>Nirbhay Rai</strong>, an IT Site Support Executive and Field Engineer with over <strong>5 years of hands-on experience</strong> on India's live highway infrastructure projects.</p>
+        <p>I specialize in ATMS, CCTV Surveillance, ANPR Systems, Networking, Server Support, and OFC coordination — delivering reliable technical operations under demanding field conditions across Uttar Pradesh and beyond.</p>
+        <div class="abt-info">
+          <div class="ai-row"><i class="fas fa-map-marker-alt"></i><span>Kushinagar, Uttar Pradesh, India</span></div>
+          <div class="ai-row"><i class="fas fa-envelope"></i><span>nirbhayrai722@gmail.com</span></div>
+          <div class="ai-row"><i class="fas fa-phone"></i><span>+91 6392324588</span></div>
+          <div class="ai-row"><i class="fas fa-check-circle"></i><span>Available for Field &amp; Remote Support</span></div>
+        </div>
+      </div>
+      <div class="about-radar reveal">
+        <canvas id="radar-canvas" width="280" height="280"></canvas>
+        <p class="radar-lbl"><i class="fas fa-brain"></i> AI Skill Radar</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ WHAT I DO ═══════════ -->
+<section id="services" class="sec">
+  <div class="sec-inner">
+    
+    <h2 class="sec-h center">My <span class="acc">Expertise</span></h2>
+    <p class="sec-sub">Core domains I work in daily on live highway &amp; infrastructure projects</p>
+    <div class="svc-grid">
+
+      <div class="svc-card reveal">
+        <div class="svc-no">01</div>
+        <div class="svc-icon"><i class="fas fa-traffic-light"></i></div>
+        <h3>ATMS Infrastructure</h3>
+        <p>End-to-end installation, configuration &amp; troubleshooting of Automatic Traffic Management System devices. 24/7 field support ensuring system uptime across all highway project sites.</p>
+        <div class="svc-tags"><span>ATMS</span><span>VMS</span><span>Toll</span></div>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-no">02</div>
+        <div class="svc-icon"><i class="fas fa-video"></i></div>
+        <h3>CCTV &amp; Surveillance</h3>
+        <p>Full-cycle CCTV deployment — camera mounting, PTZ configuration, NVR/NAS setup, remote monitoring &amp; live fault resolution on active highway corridors.</p>
+        <div class="svc-tags"><span>CCTV</span><span>PTZ</span><span>NVR</span><span>NAS</span></div>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-no">03</div>
+        <div class="svc-icon"><i class="fas fa-car"></i></div>
+        <h3>ANPR Systems</h3>
+        <p>ANPR camera alignment, OCR engine configuration, integration with toll &amp; traffic management systems, and rapid field troubleshooting without vendor dependency.</p>
+        <div class="svc-tags"><span>ANPR</span><span>OCR</span><span>Toll</span></div>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-no">04</div>
+        <div class="svc-icon"><i class="fas fa-network-wired"></i></div>
+        <h3>Networking &amp; LAN/WAN</h3>
+        <p>Switch, router, LAN/WAN setup for highway site connectivity. RF wireless link deployment for remote sites where fiber is unavailable.</p>
+        <div class="svc-tags"><span>LAN</span><span>WAN</span><span>RF</span><span>Switches</span></div>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-no">05</div>
+        <div class="svc-icon"><i class="fas fa-server"></i></div>
+        <h3>Server &amp; System Support</h3>
+        <p>Server installation, OS configuration (Windows &amp; Linux), hardware diagnostics, OFC coordination, and control room system troubleshooting.</p>
+        <div class="svc-tags"><span>Server</span><span>Linux</span><span>Windows</span><span>OFC</span></div>
+      </div>
+
+      <div class="svc-card reveal">
+        <div class="svc-no">06</div>
+        <div class="svc-icon"><i class="fas fa-tools"></i></div>
+        <h3>Field IT Support</h3>
+        <p>On-ground technical support — hardware repair, cabling, preventive maintenance schedules, incident reporting &amp; vendor coordination across remote highway sites.</p>
+        <div class="svc-tags"><span>Field</span><span>Hardware</span><span>Maintenance</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SKILLS ═══════════ -->
+<section id="skills" class="sec alt-sec">
+  <div class="sec-inner">
+    
+    <h2 class="sec-h center">Technical <span class="acc">Skills</span></h2>
+    <div class="skills-wrap">
+      <div class="sk-row reveal"><div class="sk-top"><span><i class="fas fa-video"></i> CCTV &amp; Surveillance</span><span>95%</span></div><div class="sk-track"><div class="sk-fill" data-w="95"></div></div></div>
+      <div class="sk-row reveal"><div class="sk-top"><span><i class="fas fa-traffic-light"></i> ATMS Infrastructure</span><span>93%</span></div><div class="sk-track"><div class="sk-fill" data-w="93"></div></div></div>
+      <div class="sk-row reveal"><div class="sk-top"><span><i class="fas fa-tools"></i> Hardware Troubleshooting</span><span>92%</span></div><div class="sk-track"><div class="sk-fill" data-w="92"></div></div></div>
+      <div class="sk-row reveal"><div class="sk-top"><span><i class="fas fa-car"></i> ANPR Systems</span><span>90%</span></div><div class="sk-track"><div class="sk-fill" data-w="90"></div></div></div>
+      <div class="sk-row reveal"><div class="sk-top"><span><i class="fas fa-hdd"></i> NVR / NAS Support</span><span>88%</span></div><div class="sk-track"><div class="sk-fill" data-w="88"></div></div></div>
+      <div class="sk-row reveal"><div class="sk-top"><span><i class="fas fa-network-wired"></i> Networking</span><span>88%</span></div><div class="sk-track"><div class="sk-fill" data-w="88"></div></div></div>
+      <div class="sk-row reveal"><div class="sk-top"><span><i class="fas fa-globe"></i> LAN / WAN Setup</span><span>86%</span></div><div class="sk-track"><div class="sk-fill" data-w="86"></div></div></div>
+      <div class="sk-row reveal"><div class="sk-top"><span><i class="fas fa-wifi"></i> RF Wireless Setup</span><span>82%</span></div><div class="sk-track"><div class="sk-fill" data-w="82"></div></div></div>
+      <div class="sk-row reveal"><div class="sk-top"><span><i class="fab fa-linux"></i> Windows &amp; Linux</span><span>80%</span></div><div class="sk-track"><div class="sk-fill" data-w="80"></div></div></div>
+      <div class="sk-row reveal"><div class="sk-top"><span><i class="fas fa-server"></i> Server Troubleshooting</span><span>78%</span></div><div class="sk-track"><div class="sk-fill" data-w="78"></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ EXPERIENCE ═══════════ -->
+<section id="experience" class="sec">
+  <div class="sec-inner">
+    
+    <h2 class="sec-h center">Work <span class="acc">Experience</span></h2>
+
+    <div class="exp-tl">
+
+      <div class="exp-item reveal">
+        <div class="exp-node active"><i class="fas fa-briefcase"></i></div>
+        <div class="exp-line"></div>
+        <div class="exp-card">
+          <span class="exp-now">● Current</span>
+          <div class="exp-head">
+            <h3>Site Support Executive</h3>
+            <span class="exp-dur"><i class="fas fa-calendar-alt"></i> Nov 2024 — Present</span>
+          </div>
+          <p class="exp-co"><i class="fas fa-building"></i> QuaLiX Information System LLP</p>
+          <p class="exp-desc">Managing end-to-end ATMS infrastructure across live highway project sites. Responsible for system uptime, incident response, preventive maintenance, and full field technical operations — keeping critical highway systems running 24/7.</p>
+          <div class="exp-chips">
+            <span><i class="fas fa-check"></i> ATMS Device Installation &amp; Config</span>
+            <span><i class="fas fa-check"></i> CCTV &amp; PTZ Camera Maintenance</span>
+            <span><i class="fas fa-check"></i> ANPR System Support</span>
+            <span><i class="fas fa-check"></i> NVR / NAS Management</span>
+            <span><i class="fas fa-check"></i> RF Wireless Camera Setup</span>
+            <span><i class="fas fa-check"></i> OFC Coordination &amp; Field Support</span>
+            <span><i class="fas fa-check"></i> Networking &amp; Server Support</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-node"><i class="fas fa-hard-hat"></i></div>
+        <div class="exp-line"></div>
+        <div class="exp-card">
+          <div class="exp-head">
+            <h3>Resident Engineer</h3>
+            <span class="exp-dur"><i class="fas fa-calendar-alt"></i> Nov 2022 — Nov 2024</span>
+          </div>
+          <p class="exp-co"><i class="fas fa-building"></i> Vaaan Infra Project</p>
+          <p class="exp-desc">Resident engineer on an active highway infrastructure project. Handled all IT systems, network infrastructure, and field technical support across multiple site locations for the full 2-year project duration. Single-handedly managed IT operations on site.</p>
+          <div class="exp-chips">
+            <span><i class="fas fa-check"></i> Highway Project IT Maintenance</span>
+            <span><i class="fas fa-check"></i> Networking &amp; LAN/WAN Support</span>
+            <span><i class="fas fa-check"></i> CCTV Installation &amp; Configuration</span>
+            <span><i class="fas fa-check"></i> Field Troubleshooting &amp; Operations</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-item reveal">
+        <div class="exp-node"><i class="fas fa-desktop"></i></div>
+        <div class="exp-line last-line"></div>
+        <div class="exp-card">
+          <div class="exp-head">
+            <h3>Computer Technician</h3>
+            <span class="exp-dur"><i class="fas fa-calendar-alt"></i> Jan 2020 — Oct 2022</span>
+          </div>
+          <p class="exp-co"><i class="fas fa-building"></i> Joy Computer Hardware &amp; Software Solutions</p>
+          <p class="exp-desc">Hands-on technical support for hardware repair, OS installation, CCTV setup, and networking. Built strong foundational skills in hardware diagnostics, system configuration, and client-facing IT support that underpin my field career.</p>
+          <div class="exp-chips">
+            <span><i class="fas fa-check"></i> Computer Repair &amp; Assembly</span>
+            <span><i class="fas fa-check"></i> OS Installation &amp; Configuration</span>
+            <span><i class="fas fa-check"></i> CCTV System Setup</span>
+            <span><i class="fas fa-check"></i> Networking Support</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ VLOG ═══════════ -->
+<section id="vlog" class="sec alt-sec">
+  <div class="sec-inner">
+    
+    <h2 class="sec-h center">My <span class="acc">Vlog</span></h2>
+    <p class="sec-sub">Field experiences, tech tips &amp; highway project insights</p>
+    <div class="vlog-grid">
+
+      <div class="vlog-card reveal">
+        <div class="vc-img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80" alt="CCTV"/><span class="vc-cat">CCTV</span></div>
+        <div class="vc-body">
+          <span class="vc-date"><i class="fas fa-calendar"></i> May 2025</span>
+          <h3>How I Troubleshoot CCTV Failures on Live Highways</h3>
+          <p>Real field experience dealing with camera outages, NVR issues, and network faults during active traffic hours.</p>
+          <a href="#" class="vc-btn">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="vlog-card reveal">
+        <div class="vc-img"><img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=700&q=80" alt="RF"/><span class="vc-cat">Networking</span></div>
+        <div class="vc-body">
+          <span class="vc-date"><i class="fas fa-calendar"></i> Apr 2025</span>
+          <h3>Setting Up RF Wireless Links for Remote Highway Sites</h3>
+          <p>Step-by-step deployment of RF wireless links for remote ATMS locations where fiber is unavailable.</p>
+          <a href="#" class="vc-btn">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <div class="vlog-card reveal">
+        <div class="vc-img"><img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=700&q=80" alt="ANPR"/><span class="vc-cat">ANPR</span></div>
+        <div class="vc-body">
+          <span class="vc-date"><i class="fas fa-calendar"></i> Mar 2025</span>
+          <h3>ANPR Systems: Common Issues &amp; Quick Fixes</h3>
+          <p>Most frequent ANPR camera problems and how to resolve them without vendor escalation on site.</p>
+          <a href="#" class="vc-btn">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ GALLERY ═══════════ -->
+<section id="gallery" class="sec">
+  <div class="sec-inner">
+    
+    <h2 class="sec-h center">Project <span class="acc">Gallery</span></h2>
+    <p class="sec-sub">Click on any image to view full screen &bull; Upload your own images below</p>
+
+    <!-- URL Paste to Add Image -->
+    <div class="gal-upload-bar">
+      <input type="text" id="gal-url-inp" placeholder="Image ka URL paste karo (https://...) aur Enter dabaao" />
+      <input type="text" id="gal-title-inp" placeholder="Title (optional)" />
+      <button id="gal-add-btn" class="gal-upload-btn"><i class="fas fa-plus"></i> Add Image</button>
+    </div>
+
+    <div class="gal-grid" id="gal-grid">
+      <div class="gal-item reveal" data-title="CCTV Surveillance Setup"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="CCTV" loading="lazy"/><div class="gal-ov"><i class="fas fa-expand"></i><span>CCTV Surveillance Setup</span></div></div>
+      <div class="gal-item reveal" data-title="Server Rack Installation"><img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=80" alt="Server" loading="lazy"/><div class="gal-ov"><i class="fas fa-expand"></i><span>Server Rack Installation</span></div></div>
+      <div class="gal-item reveal" data-title="Network Switch Configuration"><img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=600&q=80" alt="Network" loading="lazy"/><div class="gal-ov"><i class="fas fa-expand"></i><span>Network Switch Config</span></div></div>
+      <div class="gal-item reveal" data-title="Fiber Optic Cable Work"><img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&q=80" alt="Fiber" loading="lazy"/><div class="gal-ov"><i class="fas fa-expand"></i><span>Fiber Optic Cable Work</span></div></div>
+      <div class="gal-item reveal" data-title="Highway ATMS System"><img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=600&q=80" alt="Highway" loading="lazy"/><div class="gal-ov"><i class="fas fa-expand"></i><span>Highway ATMS System</span></div></div>
+      <div class="gal-item reveal" data-title="Control Room Monitoring"><img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8c?w=600&q=80" alt="Control" loading="lazy"/><div class="gal-ov"><i class="fas fa-expand"></i><span>Control Room Monitoring</span></div></div>
+      <div class="gal-item reveal" data-title="RF Wireless System"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="RF" loading="lazy"/><div class="gal-ov"><i class="fas fa-expand"></i><span>RF Wireless System</span></div></div>
+      <div class="gal-item reveal" data-title="ANPR Camera Setup"><img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=600&q=80" alt="ANPR" loading="lazy"/><div class="gal-ov"><i class="fas fa-expand"></i><span>ANPR Camera Setup</span></div></div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <button id="lb-close" class="lb-x"><i class="fas fa-times"></i></button>
+      <button class="lb-nav lb-prev" id="lb-prev"><i class="fas fa-chevron-left"></i></button>
+      <img id="lb-img" src="" alt=""/>
+      <p id="lb-title"></p>
+      <button class="lb-nav lb-next" id="lb-next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<section id="contact" class="sec alt-sec">
+  <div class="sec-inner">
+    
+    <h2 class="sec-h center">Get In <span class="acc">Touch</span></h2>
+    <p class="sec-sub">Have a project or opportunity? Let's talk.</p>
+    <div class="contact-wrap">
+
+      <div class="contact-left reveal">
+        <div class="ci-card"><i class="fas fa-envelope"></i><div><h4>Email</h4><a href="mailto:nirbhayrai722@gmail.com">nirbhayrai722@gmail.com</a></div></div>
+        <div class="ci-card"><i class="fas fa-phone"></i><div><h4>Phone</h4><a href="tel:+916392324588">+91 6392324588</a></div></div>
+        <div class="ci-card"><i class="fas fa-map-marker-alt"></i><div><h4>Location</h4><span>Kushinagar, Uttar Pradesh</span></div></div>
+        <a href="https://wa.me/916392324588" target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+
+        <!-- ░░ AI ASSISTANT ░░ -->
+        <div class="ai-box">
+          <div class="ai-hdr">
+            <span class="ai-pulse"></span>
+            <span class="ai-title">Ask AI — About Nirbhay</span>
+            <span class="ai-badge">AI</span>
+          </div>
+          <div class="ai-msgs" id="ai-msgs">
+            <div class="ai-msg bot">Hi! Ask me anything about Nirbhay's skills or experience. 👋</div>
+          </div>
+          <div class="ai-foot">
+            <input type="text" id="ai-inp" placeholder="e.g. What are his top skills?"/>
+            <button id="ai-send"><i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contact-form">
+        <div class="form-status" id="form-status"></div>
+        <div class="form-row">
+          <div class="fg"><label>Your Name</label><input type="text" id="name" placeholder="Rahul Sharma" required/></div>
+          <div class="fg"><label>Email</label><input type="email" id="email" placeholder="rahul@company.com" required/></div>
+        </div>
+        <div class="fg"><label>Subject</label><input type="text" id="subject" placeholder="Job Opportunity / Project Inquiry" required/></div>
+        <div class="fg"><label>Message</label><textarea id="message" rows="6" placeholder="Tell me about the opportunity..." required></textarea></div>
+        <button type="submit" class="btn-acc full"><i class="fas fa-paper-plane"></i> Send Message</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot">
+    <div class="foot-logo">NR<span class="ndot">.</span></div>
+    <p>Nirbhay Rai — IT Site Support Executive &amp; ATMS Engineer</p>
+    <div class="foot-nav">
+      <a href="#hero">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </div>
+    <p class="foot-copy">&copy; 2025 Nirbhay Rai. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/916392324588" target="_blank" class="float-wa" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+<button class="scroll-top" id="scroll-top" title="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
